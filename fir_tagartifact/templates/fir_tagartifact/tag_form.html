@@ -1,0 +1,39 @@
+{% load add_css_class %}
+{% load i18n %}
+{% load fir_artifacts %}
+
+<div id="addTag" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="addTagLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+		  	<div class="modal-header">
+		    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 id="addTagLabel" class="modal-title">{% trans "Add tag" %}</h4>
+		  	</div>
+            <form id="tag_form" action="{% url 'tagartifact:add' obj_type obj_id %}" method="POST">
+			  	<div class="modal-body">
+					{% csrf_token %}
+
+					<div id="name_control_group" class='form-group {% if tag_form.date.errors%} error{%endif%}'>
+									<label for="id_name" class="control-label name-label">{% trans "Tag name" %}</label>
+									<div class='controls'>
+										{{ tag_form.name|add_css_class:'form-control' }}
+										<span class='help-block'>{% for error in tag_form.name.errors %}{{ error }}{% endfor %}</span>
+									</div>
+							</div>
+
+							<div id="value_timestamp_control_group" class='form-group {% if tag_form.value.errors%} error{%endif%}'>
+									<label for="id_value" class="control-label value-label">{% trans "Tag value" %}</label>
+									<div class='controls'>
+										{{ tag_form.value|add_css_class:'form-control' }}
+										<span class='help-block'>{% for error in tag_form.value.errors %}{{ error }}{% endfor %}</span>
+									</div>
+							</div>
+			  	</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" data-dismiss="modal" aria-hidden="true">{% trans "Cancel" %}</button>
+					<button class="btn btn-primary" id='submit-tag'>{% trans "Add tag" %}</button>
+			  </div>
+		  </form>
+		</div>
+	</div>
+</div>

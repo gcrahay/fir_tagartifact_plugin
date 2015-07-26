@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-26 19:02+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: models.py:8
+msgid "Name"
+msgstr "Nom"
+
+#: models.py:9
+msgid "Description"
+msgstr ""
+
+#: models.py:10
+msgid "Categories"
+msgstr "Catégories"
+
+#: models.py:16
+msgid "Valid tag"
+msgstr "Tag valide"
+
+#: models.py:17
+msgid "Valid tags"
+msgstr "Tags valides"
+
+#: templates/fir_tagartifact/plugins/details_actions_add.html:6
+msgid "Tag"
+msgstr ""
+
+#: templates/fir_tagartifact/tag_form.html:10
+#: templates/fir_tagartifact/tag_form.html:34
+msgid "Add tag"
+msgstr "Ajouter un tag"
+
+#: templates/fir_tagartifact/tag_form.html:17
+msgid "Tag name"
+msgstr "Nom du tag"
+
+#: templates/fir_tagartifact/tag_form.html:25
+msgid "Tag value"
+msgstr "Valeur du tag"
+
+#: templates/fir_tagartifact/tag_form.html:33
+msgid "Cancel"
+msgstr "Annuler"

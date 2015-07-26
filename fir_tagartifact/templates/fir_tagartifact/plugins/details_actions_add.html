@@ -1,0 +1,9 @@
+{% load i18n %}
+{% load fir_artifacts %}
+{% if event.category and event.category.valid_tags.count %}
+<li>
+	<a href="#" id='add-tag' data-url="{% url 'tagartifact:add' event|content_type event.id %}">
+		<i class="glyphicon glyphicon-tag"></i>{% trans "Tag" %}
+	</a>
+</li>
+{% endif %}
