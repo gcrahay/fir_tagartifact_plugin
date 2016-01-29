@@ -20,3 +20,8 @@ Then, migrate the database structure:
 ```bash
 (your_env)${FIR_HOME}$ ./manage.py migrate
 ```
+
+Finally, collect static files:
+```bash
+(your_env)${FIR_HOME}$ ./manage.py collectstatic
+```

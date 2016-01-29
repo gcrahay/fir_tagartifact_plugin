@@ -6,9 +6,9 @@ from django.db import models, migrations
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('incidents', '0005_auto_20150525_1551'),
-    ]
+#    dependencies = [
+#        ('incidents', '0005_auto_20150525_1551'),
+#    ]
 
     operations = [
         migrations.CreateModel(
