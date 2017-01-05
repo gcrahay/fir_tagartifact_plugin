@@ -1,9 +1,14 @@
 {% load i18n %}
-{% load fir_artifacts %}
+{% load fir_plugins %}
+{% load authorization %}
+
 {% if event.category and event.category.valid_tags.count %}
+{%  has_perm 'incidents.handle_incidents' obj=event as can_handle_incident %}
+{% if can_handle_incident %}
 <li>
 	<a href="#" id='add-tag' data-url="{% url 'tagartifact:add' event|content_type event.id %}">
 		<i class="glyphicon glyphicon-tag"></i>{% trans "Tag" %}
 	</a>
 </li>
+{% endif %}
 {% endif %}
