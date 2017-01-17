@@ -7,7 +7,7 @@ from django.db import models, migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('incidents', '0004_delete_old_artifact_file'),
+        ('incidents', '0006_merge'),
     ]
 
     operations = [
