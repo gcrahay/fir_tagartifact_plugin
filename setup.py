@@ -22,7 +22,6 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
-        'django>=1.7',
     ],
     license="Apache 2.0, see LICENSE",
     zip_safe=False,
